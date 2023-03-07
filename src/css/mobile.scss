@@ -43,12 +43,12 @@ body {
 }
 header {
     width: 100%;
-    min-height: 80px;
+    min-height: 60px;
     position: fixed;
     top: 0;
     background: rgba(0, 0, 0, 0.209);
     .header-line {
-        max-width: 1440px;
+        max-width: 98%;
         margin: 0 auto;
         min-height: 80px;
         margin: 0 auto;
@@ -57,14 +57,14 @@ header {
         align-items: center;
         .logo {
             p {
-                font-size: 22px;
+                font-size: 16px;
                 font-family: "Montserrat";
                 color: #fff;
                 font-weight: 600;
             }
         }
         .date {
-            font-size: 22px;
+            font-size: 16px;
             font-family: "Montserrat";
             color: #fff;
             font-weight: 600;
@@ -73,17 +73,18 @@ header {
 }
 main {
     background: rgba(0, 0, 0, 0.649);
+    margin-top: 60px;
     .basic-region {
         margin: 0 auto;
-        aspect-ratio: 16/7;
-        max-width: 1440px;
+        aspect-ratio: 16/11;
+        max-width: 98%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .content {
-            padding: 25px;
+            padding: 10px;
             background: rgba(0, 0, 0, 0.216);
             backdrop-filter: blur(5px);
             border-radius: 15px;
@@ -91,7 +92,7 @@ main {
             h3 {
                 color: rgb(226, 12, 12);
                 font-family: "Montserrat";
-                font-size: 28px;
+                font-size: 18px;
                 font-weight: 700;
                 text-align: center;
                 margin-bottom: 15px;
@@ -99,7 +100,7 @@ main {
             div p {
                 color: #fff;
                 font-family: "Oswald";
-                font-size: 25px;
+                font-size: 16px;
                 padding: 10px 0;
             }
         }
@@ -107,44 +108,30 @@ main {
     .all-regions {
         margin-top: 5px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
         grid-template-rows: repeat(4, 1fr);
         gap: 10px;
-        max-width: 1440px;
+        max-width: 98%;
         margin: 0 auto;
         .batken-region {
-            grid-column: 1 / 4;
-            grid-row: 1 / 3;
             background: url('../img/regions/batken.jpg') top/cover no-repeat;
         }
         .osh-region {
-            grid-column: 4 / 6;
-            grid-row: 1 / 2;
             background: url('../img/regions/osh.jpg') top/cover no-repeat;
         }
         .djalal-region {
-            grid-column: 6 / 8;
-            grid-row: 1 / 2;
             background: url('../img/regions/djalal.jpg') top/cover no-repeat;
         }
         .talas-region {
-            grid-column: 4 / 6;
-            grid-row: 2 / 3;
             background: url('../img/regions/talas.jpg') top/cover no-repeat;
         }
         .chuy-region {
-            grid-column: 6 / 8;
-            grid-row: 2 / 3;
             background: url('../img/regions/chuy.jpg') top/cover no-repeat;
         }
         .naaryn-region {
-            grid-column: 1 / 4;
-            grid-row: 3 / 5;
             background: url('../img/regions/naryn.jpg') top/cover no-repeat;
         }
         .yssykkul-region {
-            grid-column: 4 / 8;
-            grid-row: 3 / 5;
             background: url('../img/regions//Issykkul.jpg') top/cover no-repeat;
         }
         .region {
@@ -209,16 +196,17 @@ footer {
         min-height: 80px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         .logo p {
-            font-size: 22px;
+            font-size: 16px;
             font-family: "Montserrat";
             color: #fff;
             font-weight: 600;
         }
         .tel p, .e-mail p {
-            font-size: 22px;
+            font-size: 16px;
             font-family: "Montserrat";
             color: #fff;
             font-weight: 600;
